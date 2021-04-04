@@ -1,1 +1,1 @@
-source "$BR2_EXTERNAL_project_base_PATH/package/application/Config.in"
+source "$BR2_EXTERNAL_project_base_PATH/package/LEDControlSvc/Config.in"
