@@ -1,4 +1,4 @@
-config BR2_PACKAGE_LED_CONTROL_SVC
+config BR2_PACKAGE_LEDCONTROLSVC
 	bool "LEDControlSvc"
 	help
 	  Includes the LED Control Service for lighting addressable LED strings.
