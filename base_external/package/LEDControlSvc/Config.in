@@ -1,4 +1,5 @@
 config BR2_PACKAGE_LEDCONTROLSVC
 	bool "LEDControlSvc"
+	select HOST_SCONS
 	help
 	  Includes the LED Control Service for lighting addressable LED strings.
