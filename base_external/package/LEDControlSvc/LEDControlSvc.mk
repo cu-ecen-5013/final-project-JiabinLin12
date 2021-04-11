@@ -5,7 +5,7 @@
 #
 ##############################################################
 
-LEDCONTROLSVC_VERSION = '2301e7abb3e4f7cd1e39ece6f00f796fb5590552'
+LEDCONTROLSVC_VERSION = '74d66dbfd115549c31c463e1ed0e3a6e50509a0b'
 LEDCONTROLSVC_SITE = 'git@github.com:cu-ecen-5013/final-project-solnus.git'
 #LEDCONTROLSVC_SITE = '/home/solnus/class/ext/final-project-solnus/'
 LEDCONTROLSVC_SITE_METHOD = git
