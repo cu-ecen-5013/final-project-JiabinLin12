@@ -1,0 +1,15 @@
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet static
+  address 192.168.51.2/24
+  gateway 192.168.51.1
+
+auto wlan0
+iface wlan0 inet dhcp
+  pre-up modprobe brcmfmac
+  pre-up wpa_supplicant -B -iwlan0 -c/etc/wpa_supplicant.conf
+  post-down killall wpa_supplicant
+  wait-delay 15
+  hostname $(hostname)
