@@ -5,7 +5,7 @@
 #
 ##############################################################
 
-LEDCONTROLSVC_VERSION = '74d66dbfd115549c31c463e1ed0e3a6e50509a0b'
+LEDCONTROLSVC_VERSION = '016201d4a89c4aedbccfcb10553b3d31088ea35c'
 LEDCONTROLSVC_SITE = 'git@github.com:cu-ecen-5013/final-project-solnus.git'
 #LEDCONTROLSVC_SITE = '/home/solnus/class/ext/final-project-solnus/'
 LEDCONTROLSVC_SITE_METHOD = git
@@ -18,10 +18,8 @@ endef
 
 define LEDCONTROLSVC_INSTALL_TARGET_CMDS
 	$(INSTALL) -d 0755 $(TARGET_DIR)/usr/bin
-	#$(INSTALL) -m 0755 $(@D)/src/AzureSrc/device-start-stop $(TARGET_DIR)/etc/init.d/S99iotdevice
+	$(INSTALL) -m 0755 $(@D)/device-start-stop $(TARGET_DIR)/etc/init.d/S99iotdevice
 	$(INSTALL) -m 0755 $(@D)/build/LEDControlSvc $(TARGET_DIR)/usr/bin/
-	#$(INSTALL) -m 0755 $(@D)/src/AzureSrc/SendCloudToDeviceMessage.py $(TARGET_DIR)/usr/bin/
-
 endef
 
 $(eval $(generic-package))
