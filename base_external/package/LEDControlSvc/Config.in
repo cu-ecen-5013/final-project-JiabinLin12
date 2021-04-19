@@ -1,6 +1,7 @@
 config BR2_PACKAGE_LEDCONTROLSVC
 	bool "LEDControlSvc"
 	select HOST_SCONS
-        select BR2_PACKAGE_AZURE_IOT_SDK_C
+    select BR2_PACKAGE_AZURE_IOT_SDK_C
+	select BR2_PACKAGE_LIBCONFIG
 	help
 	  Includes the LED Control Service for lighting addressable LED strings.
